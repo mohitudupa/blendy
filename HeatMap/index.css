@@ -1,0 +1,51 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    margin: 0px;
+    padding: 0px;
+    background-color: #000000;
+
+    text-justify: center;
+    justify-content: center;
+    position: relative;
+}
+
+@media screen and (orientation:landscape) {
+    .box{
+        height: 90vh;
+        width: 90vh;
+        margin:0 auto;
+    }
+}
+@media screen and (orientation:portrait) {
+    .box{
+        height: 90vw;
+        width: 90vw;
+        margin:0 auto;
+    }
+}
+
+.separator{
+    border: 0.10rem solid #000000;
+    background-color: #000000;
+}
+
+.space{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.autohide {
+    transform: translateY(-100%);
+    transition: transform .25s cubic-bezier(.4,0,.2,1);
+}
+
+.nav-container {
+    position: absolute;
+    width: 100%;
+}
+
+.nav-container:hover .autohide {
+    transform: translateY(0);
+}
